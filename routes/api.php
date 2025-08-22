@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\userAuth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\membercontroller;
@@ -25,4 +26,8 @@ Route::put('update', [StudentController::class, 'update']);
 Route::delete('delete/{id}', [StudentController::class, 'delete']);
 
 Route::resource('member', membercontroller::class);
+
+Route::post('signup', [userAuth::class, 'signUp']);
+Route::post('login', [userAuth::class, 'login']);
+
 
