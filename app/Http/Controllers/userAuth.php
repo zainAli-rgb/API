@@ -1,4 +1,4 @@
-<?php
+<!-- /<?php
 
 namespace App\Http\Controllers;
 
@@ -41,3 +41,13 @@ class userAuth extends Controller
 
     }
 }
+
+
+
+
+
+
+
+
+
+
