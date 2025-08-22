@@ -3,6 +3,7 @@
 use App\Http\Controllers\StudentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\membercontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,6 @@ Route::get('test', [StudentController::class, 'index']);
 Route::post('add', [StudentController::class, 'add']);
 Route::put('update', [StudentController::class, 'update']);
 Route::delete('delete/{id}', [StudentController::class, 'delete']);
+
+Route::resource('member', membercontroller::class);
 
